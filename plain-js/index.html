@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasklist</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app.js" type="text/javascript"></script>
+</head>
+<body onload="addTaskLists()">
+  <div class="container">
+    <div class="mainContainer">
+      <div class="sectionTitleBar">
+        <span class="sectionTitle">
+          Rajat Yadav
+        </span>
+      </div>
+      <div class="sectionContent" id="sectionContent"></div>
+    </div>
+  </div>
+    <div class="focusTask" id="focusT">
+        <div class="focusTaskContent" id="focusTC">
+            <button class="closeButton" onclick="closePopup()">
+                <i class="fa fa-close"></i>
+            </button>
+            <textarea class="focusTaskText" id="focusTT"></textarea>
+            <button class="likeButton, fa fa-thumbs-up" id="likeB" onclick="likePopup()">
+            </button>
+            <button class="deleteButton" onclick="deleteTask()">
+                <i class="fa fa-trash-o"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>
